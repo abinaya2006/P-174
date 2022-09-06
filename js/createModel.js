@@ -8,7 +8,7 @@ AFRAME.registerComponent("modeldesign", {
         });
     },
 
-    getModels: function () {
+    getModels: async function () {
         return fetch("model.json")
             .then(res => res.json)
             .then(data => data)
